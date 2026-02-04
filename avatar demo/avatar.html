@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<style>
+    #background {
+        display: inline-block;
+        border-radius: 50%;
+        background: linear-gradient(to right, red, orange);
+    }
+    #normalized {
+        border-radius: 50%;
+        border: white solid 2px;
+        margin: 2px;
+        display: block;
+    }
+
+    #original-container {
+        display: inline-block;
+        border-radius: 50%;
+        background: linear-gradient(to right, red, orange);
+        padding: 2px;
+        line-height: 0;
+    }
+
+    #original-padding {
+        padding: 2px;
+        overflow: hidden;
+        border-radius: 50%;
+        background-color: white;
+    }
+    #original-container #original-padding img {
+        border-radius: 50%;
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
+    }
+</style>
+<html>
+    <body>
+        <div id="background">
+            <img id="normalized" src="icon-normalized.png">
+        </div>
+
+        <div id="original-container">
+            <div id="original-padding">
+                <img id="original" src="icon.png">
+            </div>
+        </div>
+    </body>
+</html>
